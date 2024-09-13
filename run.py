@@ -1,8 +1,9 @@
 class BankAccount:
 
+    
     def __init__(self, name, account_number, account_type, branch, balance=0):
         self.name = name  # Store the name of the account holder
-        self.account_number = account_number  # account number
+        self.account_number = account_number  # Store the account number
         self.account_type = account_type
         # Store the type of the account (saving or current)
         self.branch = branch  # Store the branch name
@@ -40,3 +41,32 @@ class BankAccount:
         else:
             # If the withdrawal amount is not positive, show an error message
             self.display_message("Withdrawal amount must be positive.")
+
+    def get_balance(self):
+        # Method to display the current balance
+        self.display_message(f"Account balance: £{self.balance:.2f}")
+        # Show balance
+        return self.balance  # Return the balance value
+
+    def show_transactions(self):
+        # Method to display the transaction history
+        if self.transactions:  # Check if there are any transactions
+            self.display_message(
+                "Transaction History:\n" + "\n".join(self.transactions)
+            )  # Show transaction history
+        else:
+            # If there are no transactions, show a message
+            self.display_message("No transactions found.")
+
+    def show_account_details(self):
+        # Method to show account details
+        details = (
+            "Account Details:\n"
+            f"Bank Name: Coder's Bank\n"
+            f"First Name: {self.name}\n"
+            f"Account Number: {self.account_number}\n"
+            f"Account Type: {self.account_type.capitalize()}\n"
+            f"Branch: {self.branch}\n"
+            f"Current Balance: £{self.balance:.2f}"
+        )  # Prepare a string containing all account details
+        self.display_message(details)  # Display the account details
