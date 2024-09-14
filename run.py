@@ -70,3 +70,62 @@ class BankAccount:
             f"Current Balance: £{self.balance:.2f}"
         )  # Prepare a string containing all account details
         self.display_message(details)  # Display the account details
+
+        @staticmethod
+    def display_message(message):
+        # Static method to print a formatted message with borders
+        print("\n****************************")
+        print(f"* {message}")
+        print("****************************\n")
+
+
+def get_alpha_input(prompt):
+    # Function to get alphabetic input from the user
+    while True:
+        user_input = input(prompt)  # Prompt the user for input
+        if user_input.isalpha():
+            # Check if the input contains only alphabetic characters
+            return user_input  # Return the input if valid
+        else:
+            # error message if that contains non-alphabetic characters
+            print("Error:  Enter only alphabetic characters without space.")
+
+
+def get_float_input(prompt):
+    # Function to get a positive float input from the user
+    while True:
+        try:
+            user_input = float(input(prompt))  # Prompt the user for a number
+            if user_input > 0:  # Check if the input is a positive number
+                return user_input  # Return the input if valid
+            else:
+                # Show an error message if the input is not positive
+                print("Error: Please enter a positive number.")
+        except ValueError:
+            # Show an error message if the input is not a valid number
+            print("Error: Invalid input. Please enter a numeric value.")
+
+
+def main():
+    # Main function to run the banking system
+    print("Welcome to Coder's Bank")  # Welcome message
+
+    # User enters their details with validation for alphabetic characters
+    name = get_alpha_input("Enter your First name: ")  # first name
+    account_number = str(random.randint(1000000, 99999999))
+    # Generate random account number
+
+    # Account type input with validation
+    while True:
+        account_type = input("Enter account type (saving/current):/n").lower()
+        # Check if account type is either 'saving' or 'current'
+        if account_type in ["saving", "current"]:
+            break  # Exit the loop if input is valid
+        else:
+            # Show an error message if input is invalid
+            print("Invalid account type. Please enter 'saving' or 'current'.")
+
+    branch = get_alpha_input("Enter branch name: ")  # Prompt for branch name
+
+    # Create a new bank account with the entered details
+    account = BankAccount(name, account_number, account_type, branch)
