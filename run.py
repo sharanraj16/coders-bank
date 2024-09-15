@@ -72,7 +72,7 @@ class BankAccount:
         self.display_message(details)  # Display the account details
 
         @staticmethod
-        def display_message(message):
+     def display_message(message):
         # Static method to print a formatted message with borders
         print("\n****************************")
         print(f"* {message}")
@@ -129,3 +129,53 @@ def main():
 
     # new bank account created with the entered details
     account = BankAccount(name, account_number, account_type, branch)
+
+    while True:
+        # Menu options
+        print("\nOptions:")
+        print("1. __Deposit__")
+        print("2. __Withdraw__")
+        print("3. __Check Balance__")
+        print("4. __View Transactions__")
+        print("5. __View Account Details__")
+        print("6. __Exit__")
+
+        # User selects an option
+        choice = input("Enter your choice (1-6):\n")
+
+        if choice == '1':
+            # If user selects deposit option, prompt for deposit amount
+            amount = get_float_input("Enter deposit amount:\n")
+            account.deposit(amount)  # Call deposit method
+
+        elif choice == '2':
+            # If user selects withdraw option, prompt for withdrawal amount
+            amount = get_float_input("Enter withdrawal amount:\n")
+            account.withdraw(amount)  # Call withdraw method
+
+        elif choice == '3':
+            # If user selects balance check option
+            account.get_balance()  # Call get_balance method
+
+        elif choice == '4':
+            # If user selects to view transactions
+            account.show_transactions()  # Call show_transactions method
+
+        elif choice == '5':
+            # If user selects to view account details
+            account.show_account_details()  # Call show_account_details method
+
+        elif choice == '6':
+            # If user selects exit
+            print("\n****************************")
+            print("* Thank you for banking with Coder's Bank. Goodbye!")
+            print("****************************\n")
+            break  # Exit the loop and end the program
+
+        else:
+            # Show error if user enters an invalid option
+            print("Invalid choice. Please try again.")
+
+
+if __name__ == "__main__":
+    main()  # Run the main function
