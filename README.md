@@ -122,10 +122,6 @@ To deploy the Coders Bank project:
 
 With these steps,the Coders Bank app will be deployed on Heroku and ready for use.
 
-## Learning Experience
-
-Developing Coders Bank has been a valuable learning experience. The project utilized the course material provided by Code Institute, which was crucial in understanding and implementing various full-stack development concepts. The support from Code Institute’s tutors and student support team was instrumental throughout the development process.
-
 **Cloning the Repository**
 
 To create a local clone of this project
@@ -140,6 +136,12 @@ Cloning image
 4.Change the current working directory to the location where you want the cloned directory to be made.
 5.Type git clone, and then paste the URL copied from GitHub.
 6.Press enter and the local clone will be created.
+
+## Learning Experience
+
+Developing Coders Bank has been a valuable learning experience. The project utilized the course material provided by Code Institute, which was crucial in understanding and implementing various full-stack development concepts. The support from Code Institute’s tutors and student support team was instrumental throughout the development process.
+
+
 
 ## Credits
 

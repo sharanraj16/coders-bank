@@ -72,7 +72,7 @@ class BankAccount:
         self.display_message(details)  # Display the account details
 
         @staticmethod
-    def display_message(message):
+        def display_message(message):
         # Static method to print a formatted message with borders
         print("\n****************************")
         print(f"* {message}")
@@ -127,5 +127,5 @@ def main():
 
     branch = get_alpha_input("Enter branch name: ")  # Prompt for branch name
 
-    # Create a new bank account with the entered details
+    # new bank account created with the entered details
     account = BankAccount(name, account_number, account_type, branch)
