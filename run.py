@@ -1,6 +1,8 @@
+import random  # generate a random account number
+
+
 class BankAccount:
 
-    
     def __init__(self, name, account_number, account_type, branch, balance=0):
         self.name = name  # Store the name of the account holder
         self.account_number = account_number  # Store the account number
@@ -71,8 +73,8 @@ class BankAccount:
         )  # Prepare a string containing all account details
         self.display_message(details)  # Display the account details
 
-        @staticmethod
-     def display_message(message):
+    @staticmethod
+    def display_message(message):
         # Static method to print a formatted message with borders
         print("\n****************************")
         print(f"* {message}")
@@ -117,7 +119,7 @@ def main():
 
     # Account type input with validation
     while True:
-        account_type = input("Enter account type (saving/current):/n").lower()
+        account_type = input("Enter account type (saving/current):").lower()
         # Check if account type is either 'saving' or 'current'
         if account_type in ["saving", "current"]:
             break  # Exit the loop if input is valid
@@ -127,7 +129,7 @@ def main():
 
     branch = get_alpha_input("Enter branch name: ")  # Prompt for branch name
 
-    # new bank account created with the entered details
+    # Create a new bank account with the entered details
     account = BankAccount(name, account_number, account_type, branch)
 
     while True:
