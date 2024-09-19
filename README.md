@@ -1,6 +1,4 @@
-Here's an updated README for your "Coders Bank" project, including a detailed explanation of how the app works:
 
----
 
 # Coders Bank
 
@@ -30,14 +28,30 @@ The application follows a structured process to manage banking operations. Here'
    - A unique account number is generated randomly for the new account.
    - An instance of the `BankAccount` class is created with these details.
 
+   ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+
+   ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+
 2. **User Interaction:**
    - The user is presented with a menu of options:
      1. **Deposit:** Prompts the user to enter the amount to deposit. If the amount is positive, it is added to the account balance and recorded in the transaction history.
+    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+
      2. **Withdraw:** Prompts the user to enter the amount to withdraw. The app checks if the balance is sufficient before proceeding with the withdrawal.
+    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+
      3. **Check Balance:** Displays the current balance of the account.
+    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+
      4. **View Transactions:** Shows a history of all transactions made in the account.
+    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+
      5. **View Account Details:** Displays the account details including name, account number, account type, branch, and current balance.
+    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+
      6. **Exit:** Ends the session and displays a thank-you message.
+    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+
 
 3. **Input Validation:**
    - The app ensures that only valid inputs are accepted. For example, deposit and withdrawal amounts must be positive, and account types must be either 'saving' or 'current'. User inputs are validated to ensure they are alphabetic where required.
@@ -49,7 +63,8 @@ The application follows a structured process to manage banking operations. Here'
 
 ## Flow chart
 
-![Coders Bank Flow Chart](path/to/your/flowchart.png)
+![Coders Bank Flow Chart](readmeimages/flowchart1.png)
+![Coders Bank Flow Chart](readmeimages/flowchart2.png)
 
 
 
@@ -65,6 +80,7 @@ During the development of Coders Bank, several errors were identified and addres
 
 2. **Validation Errors**:
    - Errors in input validation were found, such as ensuring that numeric inputs were positive and that only alphabetic characters were allowed where required.
+![Coders Bank ci python linter](readmeimages/cierror.png)
 
 ### Fixes Implemented
 
@@ -85,7 +101,7 @@ During the development of Coders Bank, several errors were identified and addres
    - Conducted thorough testing to verify that all fixes resolved the identified issues and that the application functions as expected under various scenarios.
 
 These fixes have been validated to ensure that the application is now working properly and adheres to best practices.
-
+![Coders Bank ci python linter](readmeimages/cinoerror.png)
 
 
 ## Deployment
@@ -122,20 +138,21 @@ To deploy the Coders Bank project:
 
 With these steps,the Coders Bank app will be deployed on Heroku and ready for use.
 
+![Coders Bank Flow Chart](path/to/your/flowchart.png)
+
+![Coders Bank Flow Chart](path/to/your/flowchart.png)
+
 **Cloning the Repository**
 
 To create a local clone of this project
 The method from cloning a project from GitHub is below:
 
-![gameend Page wireframe image](assets/readmeimages/gameendpagewireframe.jpg)
-
-1.Under the repository’s name, click on the code tab.
-2.In the Clone with HTTPS section, click on the clipboard icon to copy the given URL.
-Cloning image
-3.In your IDE of choice, open Git Bash.
-4.Change the current working directory to the location where you want the cloned directory to be made.
-5.Type git clone, and then paste the URL copied from GitHub.
-6.Press enter and the local clone will be created.
+- 1.Under the repository’s name, click on the code tab.
+- 2.In the Clone with HTTPS section, click on the clipboard icon to copy the given URL.
+- 3.In your IDE of choice, open Git Bash.
+- 4.Change the current working directory to the location where you want the cloned directory to be made.
+- 5.Type git clone, and then paste the URL copied from GitHub.
+- 6.Press enter and the local clone will be created.
 
 ## Learning Experience
 
@@ -145,15 +162,21 @@ Developing Coders Bank has been a valuable learning experience. The project util
 
 ## Credits
 
-I would like to acknowledge the following contributors and resources:
 
-- **Code Institute**: For providing the course material, tutor service, and student support.
-- **VHS Library Assistant Oberhausen**: For the resources and assistance.
-- **YouTube Channels**:
-  - **Error Makes Clever**
-  - **Tech Tamil**
-  - **Bro Codes**
-- **Kelly Hutchison**: For continuous support and encouragement.
+
+I would like to express my deepest gratitude to the following individuals and resources, whose support and contributions were invaluable throughout this journey:
+
+- **Code Institute**: I am immensely grateful to Code Institute for providing comprehensive course materials, an exceptional tutor service, and a robust student support system. Their dedication to ensuring that learners succeed has been instrumental in my growth and development. The structured guidance and well-crafted curriculum offered by Code Institute have laid a strong foundation for my learning.
+
+- **VHS Library Assistant Oberhausen**: A special thanks to the VHS Library Assistant in Oberhausen for granting access to valuable resources and offering timely assistance. The library provided a conducive environment for research and study, and the helpful staff were always available to offer support and guidance when needed.
+
+- **YouTube Channels**: I would also like to extend my appreciation to several YouTube channels that have been an incredible source of learning and inspiration. 
+  - **Error Makes Clever**: This channel's insightful tutorials and problem-solving approaches helped me to tackle coding challenges with greater confidence and skill. 
+  - **Tech Tamil**: The content provided on this channel simplified complex concepts, making learning both accessible and enjoyable.
+  - **Bro Codes**: I am thankful for the practical demonstrations and clear explanations found on this channel, which greatly enhanced my understanding of key topics.
+
+- **Kelly Hutchison**: I would like to offer my heartfelt thanks to Kelly Hutchison for her continuous support and encouragement throughout this process. Her unwavering belief in my abilities and her constant motivation have been a driving force behind my success.
+
 
 
 
