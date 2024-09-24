@@ -9,7 +9,7 @@
 
 ## Inspiration and Development
 
-The Coders Bank project was inspired by a desire to create a functional and practical banking application that leverages my full-stack development skills. The idea was to build a simple, user-friendly app that demonstrates core banking functionalities while showcasing the knowledge gained from Code Institute. The project was developed using Python and deployed to Heroku, drawing from the extensive course materials and support provided by Code Institute.
+The Coders Bank project was inspired by a desire to create a functional and practical banking application that leverages my full-stack development skills. The idea was to build a simple, user-friendly app that demonstrates core banking functionalities while showcasing the knowledge gained from Code Institute.The German edition of Python Crashkurs by Eric Matthes greatly helped me understand how banking-related Python projects work, building on my previous experience from my BTEC in Computing and providing a solid foundation in Python programming and practical applications. The project was developed using Python and deployed to Heroku, drawing from the extensive course materials and support provided by Code Institute.
 
 ## Features
 
@@ -20,6 +20,8 @@ The Coders Bank project was inspired by a desire to create a functional and prac
 - **View Transactions:** Users can see a history of all transactions.
 - **View Account Details:** Users can view their account information including balance and transaction history.
 
+![ami image](assets/readmeimages/amibank.png)
+
 ## How Coders Bank Works
 
 The application follows a structured process to manage banking operations. Here's a detailed overview of how the app functions:
@@ -29,29 +31,29 @@ The application follows a structured process to manage banking operations. Here'
    - A unique account number is generated randomly for the new account.
    - An instance of the `BankAccount` class is created with these details.
 
-   ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+   ![Coders Bank start](assets/readmeimages/starting.png)
 
-   ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+   
 
 2. **User Interaction:**
    - The user is presented with a menu of options:
      1. **Deposit:** Prompts the user to enter the amount to deposit. If the amount is positive, it is added to the account balance and recorded in the transaction history.
-    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+    ![Coders Bank deposit](assets/readmeimages/deposit.png)
 
      2. **Withdraw:** Prompts the user to enter the amount to withdraw. The app checks if the balance is sufficient before proceeding with the withdrawal.
-    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+    ![Coders Bank withdraw](assets/readmeimages/insufficient.png)
 
      3. **Check Balance:** Displays the current balance of the account.
-    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+    ![Coders Bank balance](assets/readmeimages/balance.png)
 
      4. **View Transactions:** Shows a history of all transactions made in the account.
-    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+    ![Coders Bank transactions](assets/readmeimages/transaction.png)
 
      5. **View Account Details:** Displays the account details including name, account number, account type, branch, and current balance.
-    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+    ![Coders Bank account details](assets/readmeimages/accountdetail.png)
 
      6. **Exit:** Ends the session and displays a thank-you message.
-    ![Coders Bank Flow Chart](path/to/your/flowchart.png)
+    ![Coders Bank end](assets/readmeimages/end.png)
 
 
 3. **Input Validation:**
@@ -64,8 +66,9 @@ The application follows a structured process to manage banking operations. Here'
 
 ## Flow chart
 
-![Coders Bank Flow Chart](readmeimages/flowchart1.png)
-![Coders Bank Flow Chart](readmeimages/flowchart2.png)
+![Coders Bank Flow Chart](assets/readmeimages/flowchart1.png)
+![Coders Bank Flow Chart](assets/readmeimages/flowchart2.png)
+![Coders Bank Flow Chart](assets/readmeimages/flowchartbank.png)
 
 
 
@@ -81,7 +84,7 @@ During the development of Coders Bank, several errors were identified and addres
 
 2. **Validation Errors**:
    - Errors in input validation were found, such as ensuring that numeric inputs were positive and that only alphabetic characters were allowed where required.
-![Coders Bank ci python linter](readmeimages/cierror.png)
+![Coders Bank ci python linter](assets/readmeimages/cierror.png)
 
 ### Fixes Implemented
 
@@ -102,7 +105,7 @@ During the development of Coders Bank, several errors were identified and addres
    - Conducted thorough testing to verify that all fixes resolved the identified issues and that the application functions as expected under various scenarios.
 
 These fixes have been validated to ensure that the application is now working properly and adheres to best practices.
-![Coders Bank ci python linter](readmeimages/cinoerror.png)
+![Coders Bank ci python linter](assets/readmeimages/cinoerror.png)
 
 
 ## Deployment
@@ -139,9 +142,21 @@ To deploy the Coders Bank project:
 
 With these steps,the Coders Bank app will be deployed on Heroku and ready for use.
 
-![Coders Bank Flow Chart](path/to/your/flowchart.png)
+![Coders Bank heroku](assets/readmeimages/deployment1.png)
 
-![Coders Bank Flow Chart](path/to/your/flowchart.png)
+![Coders Bank heroku](assets/readmeimages/deployment2.png)
+
+## How to Fork the Repository using GitHub
+
+A fork creates a personal copy of the repository on your GitHub account. You can make changes to the forked repository without affecting the original project. Follow these steps to fork the repository:
+
+### Steps to Fork:
+1. **Log in to GitHub** and navigate to the repository you want to fork.
+2. On the **top-right corner** of the repository page, next to the repository name, locate the **'Fork'** button.
+3. Click on the **'Fork'** button to create a copy of the repository under your GitHub account.
+
+Once forked, you will have your own copy of the repository, where you can make and review changes before submitting pull requests back to the original project.
+
 
 **Cloning the Repository**
 
@@ -154,6 +169,7 @@ The method from cloning a project from GitHub is below:
 - 4.Change the current working directory to the location where you want the cloned directory to be made.
 - 5.Type git clone, and then paste the URL copied from GitHub.
 - 6.Press enter and the local clone will be created.
+
 
 ## Learning Experience
 
