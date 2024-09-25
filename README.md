@@ -66,8 +66,7 @@ The application follows a structured process to manage banking operations. Here'
 
 ## Flow chart
 
-![Coders Bank Flow Chart](assets/readmeimages/flowchart1.png)
-![Coders Bank Flow Chart](assets/readmeimages/flowchart2.png)
+
 ![Coders Bank Flow Chart](assets/readmeimages/flowchartbank.png)
 
 
